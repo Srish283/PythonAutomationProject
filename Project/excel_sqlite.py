@@ -5,13 +5,22 @@ import sqlite3
 ConStr="EmpExcelData.db"
 print('OPENING WORKBOOK Employee_Data......')
 
-wb = op.load_workbook('Employee_Data.xlsx')  # Open workbook Employee Data
-sheet = wb.get_sheet_by_name('Employee data')  # Gets Sheet by sheetname which is Employee data
-sheet.title='emp_data'                 # Sets title to emp_data
-mysheet=wb.active
-print('Active sheet {}'.format(mysheet))
-print('There are {} rows and {} columns in Employee Data'.format(sheet.max_row,sheet.max_column))   # Highest row and column of the sheet
-sheet['F1']='Job Hours' # Column heading changes from Job_Time to Job Hours
+try:						#Exception Handling
+    wb = op.load_workbook('Employee_Data.xlsx')  # Open workbook Employee Data
+    try:
+        sheet = wb.get_sheet_by_name('Employee data')  # Gets Sheet by sheetname which is Employee data
+        sheet.title='emp_data'                 # Sets title to emp_data
+        mysheet=wb.active
+        print('Active sheet {}'.format(mysheet))
+        print('There are {} rows and {} columns in Employee Data'.format(sheet.max_row,sheet.max_column))   # Highest row and column of the sheet
+        sheet['F1']='Job Hours' # Column heading changes from Job_Time to Job Hours
+
+    except KeyError:				#If sheet does not exist it raises a KeyError
+        print('Worksheet does not exist.')
+
+except FileNotFoundError:			#If file or directory not found
+    print("File not found. Check the filename")
+    exit()
 
 def create_table():
     conn = sqlite3.connect(ConStr)
