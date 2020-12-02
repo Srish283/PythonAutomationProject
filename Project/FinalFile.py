@@ -166,6 +166,31 @@ def convert_xlsx_to_docx():
 def convert_docx_to_pdf():
     convert('Excel_to_Doc.docx','C:/Users/srish/Desktop/PythonProject/Docx_to_Pdf.pdf')
 
+
+def pdfmerge():
+	file1=open("Docx_to_Pdf.pdf", "rb")         #Opens pdf in read binary mode
+	FirstFile = PyPDF2.PdfFileReader(file1)     #Reads all contents of infile1
+
+	file2=open("MyProject.pdf", "rb")
+	SecondFile = PyPDF2.PdfFileReader(file2)
+	#watermark_pg=watermark.getPage(0).rotateClockwise(90)
+	FinalFile = PyPDF2.PdfFileWriter()          #PdfFileWriter file holds the final file
+
+	for i in range(FirstFile.getNumPages()):   #Iterates till highest Number of pages in PDF1
+    		FinalFile.addPage(FirstFile.getPage(i))  #ADDS every page of firstfile to FinalFile
+
+	for i in range(SecondFile.getNumPages()):   #Iterates till highest Number of pages in PDF2
+    		FinalFile.addPage(SecondFile.getPage(i))  #ADDS every page of secondfile to FinalFile
+
+
+	outfile = open("Final_PDF.pdf", 'wb')    #Open final pdf in write binary mode
+	FinalFile.write(outfile)                #write each file
+
+	file2.close()
+	file1.close()                               # Closes all files that Was opened
+	outfile.close()
+
+
 # Function Calls
 if __name__=="__main__":
     ConStr="EmpExcelData.db"
@@ -180,3 +205,4 @@ if __name__=="__main__":
     storing_newdata_excel(records,wb)
     convert_xlsx_to_docx()
     convert_docx_to_pdf()
+    pdfmerge()
