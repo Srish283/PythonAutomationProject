@@ -10,13 +10,14 @@ from fpdf import FPDF
 def open_url():
 
     #Enter the url from where u want to search the quotes
-    #URL = "http://www.values.com/inspirational-quotes"
+    #URL = "http://www.values.com/inspirational-quotes" <----- Use this url
 
     URL = input('Enter a url: ')
     r = requests.get(URL)
 
     try:
         r.raise_for_status()
+        
     except Exception as exc:
         print('There was a problem: %s' % (exc))
 
@@ -63,24 +64,22 @@ def csv_to_json():
 
 def json_to_pdf():
 
-    # save FPDF() class into  
-    # a variable pdf 
+    # save FPDF() class into  a variable pdf 
     pdf = FPDF()    
     
-    # Add a page 
+    # Add a page into the pdf created
     pdf.add_page() 
     
-    # set style and size of font  
-    # that you want in the pdf 
+    # set style and size of font that you want in the pdf 
     pdf.set_font("Arial", size = 5.3) 
     
-    # open the text file in read mode 
+    # open the .json file in read mode 
     f = open("file.json", "r") 
     
-    # insert the texts in pdf 
+    # insert the texts in pdf created
     for x in f: 
         pdf.cell(0, 10, txt= x, ln = 2, align='A') 
-        #print(x)
+        
         
     # save the pdf with name .pdf 
     pdf.output("MyProject.pdf")   
@@ -96,6 +95,7 @@ if __name__=="__main__":
     #Converts file.json to MyProject.pdf
     json_to_pdf()
 
+    
 
     
 
