@@ -14,7 +14,8 @@ Concepts that are covered is listed as follows.
 * Srishti Bhandarkar
 * Swathi Prabhu 
 <br>
-:diamonds: __Topics Covered__ <br>
+
+:diamonds: __Topics Covered__ 
 * Excel File (With Employee Data)
 * Database: Sqlite3 (CRUD operations on Employee Data and store Query Results creating new Excel file)
 * Word Document (Excel to Word)
@@ -28,7 +29,8 @@ Concepts that are covered is listed as follows.
 * Sudhiksha Prabhu
 * Siona Misha 
 <br>
-:diamonds: __Topics Covered__ <br>
+
+:diamonds: __Topics Covered__ 
 * Web Scraping with beautifulsoup (Scrape Inspirational Quotes)
 * CSV (Scrapped data to CSV file)
 * JSON (CSV to JSON)
