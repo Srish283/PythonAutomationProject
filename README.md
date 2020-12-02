@@ -27,7 +27,7 @@ Concepts that are covered is listed as follows.
 [Scarping_quotes.py](https://github.com/Srish283/PythonAutomationProject/blob/main/Project/Scarping_quotes.py) <br>
 :diamonds: __Contributors:__ <br>
 * Sudhiksha S Prabhu
-* Siona Misha 
+* Siona Misha Nazareth
 <br>
 
 :diamonds: __Topics Covered__ 
