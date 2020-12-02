@@ -8,12 +8,12 @@ This Project demonstrates usage of Automating tasks concepts in two separate pyt
 Concepts that are covered is listed as follows.
 
 ------
-:trident: __File 1__ <br>
-![FinalFile.py](https://github.com/Srish283/PythonAutomationProject/tree/main/Project/FinalFile.py)
-:diamonds: Contributors:
+:trident: __File 1__ 
+[FinalFile.py](https://github.com/Srish283/PythonAutomationProject/tree/main/Project/FinalFile.py) <br>
+:diamonds: __Contributors:__ <br>
 * Srishti Bhandarkar
-* Swathi Prabhu
-:diamonds: Topics Covered
+* Swathi Prabhu <br>
+:diamonds: __Topics Covered__ <br>
 * Excel File (With Employee Data)
 * Database: Sqlite3 (CRUD operations on Employee Data and store Query Results creating new Excel file)
 * Word Document (Excel to Word)
@@ -22,11 +22,11 @@ Concepts that are covered is listed as follows.
 
 ------
 :trident: __File 2__ <br>
-![FinalFile.py](https://github.com/Srish283/PythonAutomationProject/tree/main/Project/Scrapped_qoutes.py)
-:diamonds: Contributors:
+[Scarping_quotes.py](https://github.com/Srish283/PythonAutomationProject/blob/main/Project/Scarping_quotes.py) <br>
+:diamonds: __Contributors:__ <br>
 * Sudhiksha Prabhu
-* Siona Misha 
-:diamonds: Topics Covered
+* Siona Misha <br>
+:diamonds: __Topics Covered__ <br>
 * Web Scraping with beautifulsoup (Scrape Inspirational Quotes)
 * CSV (Scrapped data to CSV file)
 * JSON (CSV to JSON)
@@ -35,5 +35,14 @@ Concepts that are covered is listed as follows.
 ------
 ------
 :small_orange_diamond: __Python Modules Used__
-* openpyxl   * sqlite3  * docx    * PyPDF2    * selenium    
-* docx2pdf  * bs4   * csv   * json    * fpdf   * requests
+* openpyxl   
+* sqlite3  
+* docx    
+* PyPDF2    
+* selenium    
+* docx2pdf  
+* bs4   
+* csv   
+* json   
+* fpdf   
+* requests
