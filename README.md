@@ -12,7 +12,8 @@ Concepts that are covered is listed as follows.
 [FinalFile.py](https://github.com/Srish283/PythonAutomationProject/tree/main/Project/FinalFile.py) <br>
 :diamonds: __Contributors:__ <br>
 * Srishti Bhandarkar
-* Swathi Prabhu <br>
+* Swathi Prabhu 
+<br>
 :diamonds: __Topics Covered__ <br>
 * Excel File (With Employee Data)
 * Database: Sqlite3 (CRUD operations on Employee Data and store Query Results creating new Excel file)
@@ -21,11 +22,12 @@ Concepts that are covered is listed as follows.
 * Selenium Web Drivers(Mail Automation)
 
 ------
-:trident: __File 2__ <br>
+:trident: __File 2__ 
 [Scarping_quotes.py](https://github.com/Srish283/PythonAutomationProject/blob/main/Project/Scarping_quotes.py) <br>
 :diamonds: __Contributors:__ <br>
 * Sudhiksha Prabhu
-* Siona Misha <br>
+* Siona Misha 
+<br>
 :diamonds: __Topics Covered__ <br>
 * Web Scraping with beautifulsoup (Scrape Inspirational Quotes)
 * CSV (Scrapped data to CSV file)
