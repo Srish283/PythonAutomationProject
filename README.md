@@ -26,7 +26,7 @@ Concepts that are covered is listed as follows.
 :trident: __File 2__ 
 [Scarping_quotes.py](https://github.com/Srish283/PythonAutomationProject/blob/main/Project/Scarping_quotes.py) <br>
 :diamonds: __Contributors:__ <br>
-* Sudhiksha Prabhu
+* Sudhiksha S Prabhu
 * Siona Misha 
 <br>
 
